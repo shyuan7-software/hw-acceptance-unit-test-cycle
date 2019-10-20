@@ -4,8 +4,12 @@
 
 = form_tag movie_path(@movie), :method => :put do
 
-  = label :movie, :title, 'Title'
+  = label :movie,:title, 'Title'
   = text_field :movie, 'title'
+  
+  = label :movie, :director, 'Director'
+  = text_field :movie, 'director'
+
 
   = label :movie, :rating, 'Rating'
   = select :movie, :rating, ['G','PG','PG-13','R','NC-17']
