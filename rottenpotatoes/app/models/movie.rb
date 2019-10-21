@@ -4,6 +4,6 @@ class Movie < ActiveRecord::Base
   end
   
   def self.find_with_same_director(dir)
-    Movie.all.where(director: dir)
+    Movie.where(director: dir)
   end  
 end
